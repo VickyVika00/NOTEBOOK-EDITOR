@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Notebook - Multi-File Markdown Editor</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div id="app">
+			<aside id="file-list">
+				<div class="file-list-header">
+					<input id="search" placeholder="Search files..." aria-label="Search files" />
+					<button id="new-file" title="New file (Ctrl+Alt+N)">New</button>
+				</div>
+				<ul id="files" role="list"></ul>
+				<div class="file-list-footer">Files stored locally in your browser (localStorage)</div>
+			</aside>
+
+			<main id="editor-area">
+				<div id="editor-header">
+					<input id="filename" placeholder="Untitled.md" aria-label="Filename" />
+					<div class="editor-actions">
+						<button id="save" title="Save (Ctrl+S)">Save</button>
+						<button id="rename" title="Rename file">Rename</button>
+						<button id="delete" title="Delete file">Delete</button>
+						<button id="export" title="Export as .md">Export</button>
+					</div>
+				</div>
+				<textarea id="editor" spellcheck="false" aria-label="Markdown editor"></textarea>
+			</main>
+
+			<section id="preview">
+				<div id="preview-header">Preview</div>
+				<div id="preview-content" aria-live="polite"></div>
+			</section>
+		</div>
+
+		<!-- Libraries from CDN (no server install needed) -->
+		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/dompurify@2.4.0/dist/purify.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
