@@ -27,4 +27,9 @@ h. Delete the file
 i. Export the selected file to Markdown file
 j. live preview section of the sected file name and content. 
 
+Challenges & Iteration:
+One of my main challenges was effectively guiding the model's project creation. The model needed specific instructions, such as which server environment to use and which programming languages ​​or tools to apply. To provide accurate and effective hints, I realized I needed a deep understanding of the technical aspects.
 
+As an engineer, I recognized that writing effective hints also depended on a solid foundation in the relevant technologies. Therefore, I decided to use XAMPP, HTML, CSS, and JavaScript—tools I had used before and had a basic understanding of. This familiarity allowed me to efficiently review the generated code, identify errors, and debug them during development.
+
+Through several iterations, I improved my hints by providing clearer technical guidance to the model and validating the output in a local environment. Each iteration improved the project's structure, functionality, and alignment with my intended design.
